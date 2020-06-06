@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.3.0.RELEASE")
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.3.0.RELEASE')
     }
 }
 
@@ -17,7 +17,7 @@ group 'com.daniilmatafonov.task1'
 version '1.0-SNAPSHOT'
 
 bootJar {
-    baseName = 'gs-spring-boot-docker'
+    baseName = 'hello-app-docker'
     version =  '0.1.0'
 }
 
