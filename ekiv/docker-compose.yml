@@ -26,7 +26,11 @@ services:
    - '8484:8484'
   network_mode: host
 
-
+ goapi:
+  build: ./goapi
+  ports:
+   - '8585:8585'
+  network_mode: host
 
 networks:
   my-network:
