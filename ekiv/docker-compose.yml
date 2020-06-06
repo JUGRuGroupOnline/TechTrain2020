@@ -20,6 +20,14 @@ services:
    - '8383:8383'
   network_mode: host
 
+ nodejs:
+  build: ./nodejs
+  ports:
+   - '8484:8484'
+  network_mode: host
+
+
+
 networks:
   my-network:
     external: true
