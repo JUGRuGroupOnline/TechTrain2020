@@ -1,0 +1,8 @@
+C:\Users\ekiv\source\repos\fsharp3\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ekiv\source\repos\fsharp3\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ekiv\source\repos\fsharp3\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\ekiv\source\repos\fsharp3\obj\Debug\netcoreapp3.1\fsharp3.AssemblyInfoInputs.cache
+C:\Users\ekiv\source\repos\fsharp3\obj\Debug\netcoreapp3.1\fsharp3.AssemblyInfo.fs
+C:\Users\ekiv\source\repos\fsharp3\obj\Debug\netcoreapp3.1\fsharp3.fsproj.CoreCompileInputs.cache
+C:\Users\ekiv\source\repos\fsharp3\obj\Debug\netcoreapp3.1\staticwebassets\fsharp3.StaticWebAssets.Manifest.cache
+C:\Users\ekiv\source\repos\fsharp3\obj\Debug\netcoreapp3.1\staticwebassets\fsharp3.StaticWebAssets.xml
