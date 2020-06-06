@@ -1,0 +1,11 @@
+services:
+  csharp2:
+    build:
+      context: C:\Personal\dotnetcorefsharp\csharp2
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: csharp2
+    ports:
+    - target: 80
+version: '3.4'

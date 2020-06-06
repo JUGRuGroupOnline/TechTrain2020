@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+
+ gs-spring-boot-docker:
+  build: ./gs-spring-boot-docker/initial
+  ports:
+   - '8080:8080'
+  networks:
+      - my-network
+ csharp2:
+  build: ./csharp2
+  ports:
+   - '8282:8282'
+  network_mode: host
+
+
+
+networks:
+  my-network:
+    external: true
+
