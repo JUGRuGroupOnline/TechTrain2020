@@ -32,6 +32,12 @@ services:
    - '8585:8585'
   network_mode: host
 
+ python-rest-api-docker-master:
+  build: ./python-rest-api-docker-master
+  ports:
+   - '8686:8686'
+  network_mode: host
+
 networks:
   my-network:
     external: true
