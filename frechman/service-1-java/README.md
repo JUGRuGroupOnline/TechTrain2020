@@ -1,6 +1,6 @@
 #### Run
 
->./mvnw clean package (or just: `mvn clean install`)
+>mvn clean install
 
 >docker build -t service1 .
 
