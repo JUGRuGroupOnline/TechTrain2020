@@ -11,6 +11,9 @@ import java.net.URL
 fun main(args: Array<String>) {
    val port = System.getenv("PORT") ?: "8080"
    embeddedServer(Netty, port.toInt()) {
+       install(CORS) {
+           anyHost()
+       }
        routing {
            get("/") {
                var response = URL("http://" + System.getenv("SOURCE_URL")).readText()
