@@ -12,7 +12,9 @@ import java.net.URL
 @RestController
 class Controller {
 
-    val url = URL("http://localhost:8080/")
+    var host: String = System.getenv("HOST_TASK_1")
+    var port: String = System.getenv("PORT_TASK_1")
+    val url = URL("http://$host:$port/")
 
     @GetMapping("/")
     fun getString(): String {
