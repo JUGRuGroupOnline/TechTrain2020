@@ -1,0 +1,70 @@
+version: '3'
+services:
+  issue1:
+    build: ./issue1
+    image: issue1
+    ports:
+      - "5001:8080"
+  issue2:
+    build: ./issue2
+    image: issue2
+    ports:
+      - "5002:80"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue1:8080/"
+    depends_on:
+      - issue1
+  issue3:
+    build: ./issue3
+    image: issue3
+    ports:
+      - "5003:80"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue2/"
+    depends_on:
+      - issue2
+  issue4:
+    build: ./issue4
+    image: issue4
+    ports:
+      - "5004:80"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue3/"
+    depends_on:
+      - issue3
+  issue5:
+    build: ./issue5
+    image: issue5
+    ports:
+      - "5005:3000"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue4/"
+    depends_on:
+      - issue4
+  issue6:
+    build: ./issue6
+    image: issue6
+    ports:
+      - "5006:80"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue5:3000/"
+    depends_on:
+      - issue5
+  issue7:
+    build: ./issue7
+    image: issue7
+    ports:
+      - "5007:5000"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue6/"
+    depends_on:
+      - issue6
+  issue8:
+    build: ./issue8
+    image: issue8
+    ports:
+      - "5008:5000"
+    environment:
+      SERVICE_ENTRYPOINT: "http://issue7:5000/"
+    depends_on:
+      - issue7
