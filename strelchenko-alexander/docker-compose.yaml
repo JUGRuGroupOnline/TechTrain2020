@@ -1,0 +1,75 @@
+version: '3'
+
+services:
+  task01:
+    build:
+      context: ./task01
+      dockerfile: Dockerfile
+    image: task01
+    ports:
+      - "8080:8080"
+
+  task02:
+    build:
+      context: ./task02
+      dockerfile: Dockerfile
+    image: task02
+    environment:
+      TASK01_HOST: task01
+      TASK01_PORT: 8080
+    ports:
+      - "8081:8081"
+    depends_on:
+      - task01
+
+  task03:
+    build:
+      context: ./task03
+      dockerfile: Dockerfile
+    image: task03
+    environment:
+      TASK02_HOST: task02
+      TASK02_PORT: 8081
+    ports:
+      - "8082:8082"
+    depends_on:
+      - task02
+
+  task04:
+    build:
+      context: ./task04
+      dockerfile: Dockerfile
+    image: task04
+    environment:
+      TASK03_HOST: task03
+      TASK03_PORT: 8082
+    ports:
+      - "8083:8083"
+    depends_on:
+      - task03
+
+  task05:
+    build:
+      context: ./task05
+      dockerfile: Dockerfile
+    image: task05
+    environment:
+      TASK04_HOST: task04
+      TASK04_PORT: 8083
+    ports:
+      - "8084:8084"
+    depends_on:
+      - task04
+
+  task06:
+    build:
+      context: ./task06
+      dockerfile: Dockerfile
+    image: task06
+    environment:
+      TASK05_HOST: task05
+      TASK05_PORT: 8084
+    ports:
+      - "8085:8085"
+    depends_on:
+      - task05

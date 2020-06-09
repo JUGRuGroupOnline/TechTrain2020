@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JugRu_Challenge2", "JugRu_Challenge2\JugRu_Challenge2.csproj", "{E0F497BC-40B9-444A-BC49-CF479A0F6C6B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0F497BC-40B9-444A-BC49-CF479A0F6C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F497BC-40B9-444A-BC49-CF479A0F6C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F497BC-40B9-444A-BC49-CF479A0F6C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F497BC-40B9-444A-BC49-CF479A0F6C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
