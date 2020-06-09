@@ -38,6 +38,13 @@ services:
    - '8686:8686'
   network_mode: host
 
+ kotlin:
+  build: ./kotlin/demo
+  ports:
+   - '8787:8787'
+  network_mode: host
+
+
 networks:
   my-network:
     external: true
