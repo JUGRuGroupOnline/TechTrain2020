@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  csharp2:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8282"
+    networks:
+      - my-network

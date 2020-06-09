@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'org.springframework.boot' version '2.2.0.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'idea'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+group 'ann.kont'
+version '0.0.1-SNAPSHOT'
+
+bootJar {
+    baseName = 'task1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}

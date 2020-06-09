@@ -1,0 +1,38 @@
+version: '3'
+services:
+  service-1-java:
+    image: "bezyazychny/techtrain2020-service-1-java"
+  service-2-go:
+    image: "bezyazychny/techtrain2020-service-2-go"
+    environment:
+      - PORT=8082 
+      - SOURCE_URL=service-1-java:8080
+  service-3-python:
+    image: "bezyazychny/techtrain2020-service-3-python"
+    environment:
+      - PORT=8083 
+      - SOURCE_URL=service-2-go:8082
+  service-4-ruby:
+    image: "bezyazychny/techtrain2020-service-4-ruby"
+    environment:
+      - PORT=8084
+      - SOURCE_URL=service-3-python:8083
+  service-5-node:
+    image: "bezyazychny/techtrain2020-service-5-node"
+    environment:
+      - PORT=8085
+      - SOURCE_URL=service-4-ruby:8084
+  service-6-php:
+    image: "bezyazychny/techtrain2020-service-6-php"
+    environment:
+      - PORT=8086
+      - SOURCE_URL=service-5-node:8085
+    ports:
+      - "8086:8086"    
+  service-7-kotlin:
+    image: "bezyazychny/techtrain2020-service-7-kotlin"
+    environment:
+      - PORT=8087
+      - SOURCE_URL=service-6-php:8086
+    ports:
+      - "8080:8087"   

@@ -1,0 +1,25 @@
+body {
+    background-color: #fddf41;
+}
+
+.center {
+    width: 400px;
+    padding-top: 200px;
+    margin: auto;
+}
+
+.sign {
+    text-align: center;
+}
+
+#wrap {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+}

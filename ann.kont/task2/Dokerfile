@@ -1,0 +1,5 @@
+ARG VERSION=8-jdk-alpine
+ARG JAR_FILE=build/libs/*.jar
+COPY ${JAR_FILE} task2.jar
+EXPOSE 8081
+ENTRYPOINT ["java","-jar","/task2.jar"]

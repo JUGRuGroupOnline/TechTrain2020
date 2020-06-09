@@ -1,0 +1,8 @@
+### Node template
+# Logs
+logs
+*.log
+.DS_Store
+
+node_modules/
+

@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+
+ gs-spring-boot-docker:
+  build: ./gs-spring-boot-docker/initial
+  ports:
+   - '8080:8080'
+  networks:
+      - my-network
+ csharp2:
+  build: ./csharp2
+  ports:
+   - '8282:8282'
+  network_mode: host
+
+ fsharp3:
+  build: ./fsharp3
+  ports:
+   - '8383:8383'
+  network_mode: host
+
+ nodejs:
+  build: ./nodejs
+  ports:
+   - '8484:8484'
+  network_mode: host
+
+ goapi:
+  build: ./goapi
+  ports:
+   - '8585:8585'
+  network_mode: host
+
+ python-rest-api-docker-master:
+  build: ./python-rest-api-docker-master
+  ports:
+   - '8686:8686'
+  network_mode: host
+
+ kotlin:
+  build: ./kotlin/demo
+  ports:
+   - '8787:8787'
+  network_mode: host
+
+
+networks:
+  my-network:
+    external: true
+

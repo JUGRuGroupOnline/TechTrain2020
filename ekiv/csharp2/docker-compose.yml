@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  csharp2:
+    image: ${DOCKER_REGISTRY-}csharp2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8282"
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    external: true

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fsharp3:
+    image: ${DOCKER_REGISTRY-}fsharp3
+    build:
+      context: .
+      dockerfile: Dockerfile

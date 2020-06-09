@@ -1,0 +1,13 @@
+Первая задача:
+
+Порядок сборки:
+
+    ```` gradle build ````
+
+    ```` docker build -t app/hello . ````
+
+Запуск:
+
+    ```` docker run -p 8080:8080 app/hello ````
+
+
