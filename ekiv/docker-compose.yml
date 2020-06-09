@@ -14,7 +14,11 @@ services:
    - '8282:8282'
   network_mode: host
 
-
+ fsharp3:
+  build: ./fsharp3
+  ports:
+   - '8383:8383'
+  network_mode: host
 
 networks:
   my-network:
