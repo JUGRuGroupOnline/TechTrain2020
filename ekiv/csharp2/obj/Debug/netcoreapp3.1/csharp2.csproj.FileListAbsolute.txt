@@ -1,0 +1,9 @@
+C:\Personal\dotnetcorefsharp\csharp2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Personal\dotnetcorefsharp\csharp2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Personal\dotnetcorefsharp\csharp2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\csharp2.csprojAssemblyReference.cache
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\csharp2.AssemblyInfoInputs.cache
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\csharp2.AssemblyInfo.cs
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\csharp2.RazorTargetAssemblyInfo.cache
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\staticwebassets\csharp2.StaticWebAssets.Manifest.cache
+C:\Personal\dotnetcorefsharp\csharp2\obj\Debug\netcoreapp3.1\staticwebassets\csharp2.StaticWebAssets.xml
