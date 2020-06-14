@@ -20,7 +20,7 @@ namespace razor.Pages
 
         public async Task<IActionResult> OnGet()
         {
-            Result = await new HttpClient().GetStringAsync("http://google.com");//("http://localhost:8787");
+            Result = await new HttpClient().GetStringAsync("http://localhost:8787");
             return Page();
         }
     }

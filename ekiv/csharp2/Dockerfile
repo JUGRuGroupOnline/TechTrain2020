@@ -5,7 +5,6 @@ WORKDIR /app
 
 ENV ASPNETCORE_URLS=http://+:8282
 
-EXPOSE 80
 EXPOSE 8282
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build

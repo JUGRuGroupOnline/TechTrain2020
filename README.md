@@ -1,3 +1,19 @@
+
+## GUIDE
+
+1. /ekiv$ docker-compose build
+2. /ekiv$ docker-compose up
+3. In Browser open http://localhost:80
+
+
+
+
+
+
+
+
+
+
 ## Задачи на TechTrain 2020
 
 Задачи написаны в виде Issues. Всего их 8. Рекомендуем выполнять их по порядку.
